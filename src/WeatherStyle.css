@@ -1,0 +1,197 @@
+:root { 
+    color-scheme: dark;
+  --bg:#0B1220;        
+  --surface:#0F172A;   
+  --surface-2:#111827; 
+  --text:#E5E7EB;   
+  --muted:#94A3B8;   
+  --border:#1F2937;
+
+  --brand:#60A5FA;  
+  --brand-300:#93C5FD; 
+  --brand-600:#2563EB;
+
+  --info:#93C5FD; --warn:#FBBF24; --danger:#F87171; --success:#34D399;
+}
+
+*{
+    min-width: 0;
+    min-height: 0;
+}
+*::after { box-sizing: border-box; }
+html, body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+img{
+    min-height: 0;
+}
+
+#PageContainer{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-color: var(--bg);
+    color: var(--text);
+}
+
+.HeaderContainer{
+    flex: 0 0 auto;
+    width: auto;
+    display: flex;
+    justify-content: flex-end;
+    background-color: var(--surface-2);
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,.35);
+    margin-bottom: 1rem;
+}
+
+.MainContainer{
+    display: flex;
+    flex: 0 0 20%;
+    width: auto;
+    min-height: 0;
+}
+
+.MainLeftContainer{
+    height: 100%;
+    width: calc(100%/3 - 1rem);
+    min-width: 0;
+    min-height: 0;
+    font-size: 3cqh;
+}
+
+.MainImageContainer{
+    height: 80%;
+    width: auto;
+    aspect-ratio: 1/1;
+    overflow: hidden;
+    border-radius: 20%;
+    overflow: hidden;
+    min-width: 0;
+    min-height: 0;
+    box-shadow: 0.4rem 0.4rem 1rem rgba(0,0,0,.35);
+}
+
+.MainImage{
+    min-height: 0;
+    height: 100%;
+    width: auto;
+    object-fit: cover;
+}
+
+.MainInfoContainer{
+    font-size: 3cqh;
+    min-width: 0;
+    min-height: 0;
+}
+
+.MainCity{
+    height: 20%;
+    width: auto;
+}
+
+.MiddleContainer{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    width: auto;
+    min-height: 0;
+}
+
+.DaysOfWeekContainer{
+    flex: 0 0 auto;
+    width: 100%;
+    background:var(--surface-2);
+    border-color: var(--border);
+}
+
+.DaysOfWeekContainer > button{
+    color:var(--muted);
+    border-color: var(--border);
+    width: calc(50% / 7 );
+    border-radius: 20% 20% 0 0;
+    background-color: var(--secondary);
+    overflow: hidden;
+}
+
+#DateDisplay{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+    overflow: auto;
+    gap: 0.5rem;
+    background:var(--bg);
+}
+
+.HourDisplay{
+    display: flex;
+    flex: 0 0 calc( 100% / 8);
+    width: 100%;
+    min-height: 0;
+    background:var(--surface);
+    border-radius: 2%;
+    
+}
+
+.ImageContainer{
+    background-color: var(--background2);
+    height: 100%;
+    width: auto;
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    min-width: 0;
+    min-height: 0;
+    border-radius: 20%;
+    overflow: hidden;
+    box-shadow: 0.4rem 0.4rem 1rem rgba(0,0,0,.35);
+}
+
+.HourTemperature{
+    flex: 0 1 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3cqh;
+    color:var(--text);
+}
+
+.HourWeather{
+    flex: 1 1 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3cqh;
+    color:var(--text);
+}
+
+.HourHour{
+    flex: 0 1 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3cqh;
+    color:var(--text);
+}
+
+.HourIcon{
+    height: 100%;
+    width: 100%;
+    min-width: 0;
+    min-height: 0;
+    object-fit: cover;   
+    object-position: center;
+    display: block; 
+}
+
+.Footer{
+    flex: 0 0 auto;
+    width: auto;
+    margin-top: auto;
+    text-align: center;
+    background:var(--surface-2);
+    color:var(--muted);
+    box-shadow: 0 -0.4rem 1rem rgba(0,0,0,.35);
+}
